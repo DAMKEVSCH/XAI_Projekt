@@ -1,0 +1,124 @@
+{
+  "data_source": "statlog+german+credit+data/german.data",
+  "python": "3.12.10",
+  "packages": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "dice-ml": "0.12"
+  },
+  "split_seed": 42,
+  "random_forest_seed": 42,
+  "case_selection": "alle als bad / 1 vorhergesagten Testfälle",
+  "search_seeds": [
+    11,
+    29,
+    47,
+    71,
+    101
+  ],
+  "selected_cases": [
+    11,
+    141,
+    166,
+    216,
+    229,
+    257,
+    289,
+    338,
+    353,
+    375,
+    431,
+    522,
+    528,
+    570,
+    678,
+    739,
+    751,
+    788,
+    818,
+    831,
+    832,
+    840,
+    853,
+    887,
+    915,
+    917,
+    938,
+    993,
+    998
+  ],
+  "n_estimators": 120,
+  "max_depth": 8,
+  "min_samples_leaf": 3,
+  "target_class": 0,
+  "requested_cfs": 3,
+  "candidate_budget": 20000,
+  "model_row_limit": 20050,
+  "experiments": {
+    "R0_ausgang": {
+      "name": "R0: Ausgangsdesign",
+      "short": "R0 Ausgang",
+      "fixed_features": [
+        "age",
+        "credit_history",
+        "personal_status_sex",
+        "foreign_worker"
+      ],
+      "min_p_good": 0.5
+    },
+    "R1_beeinflussbar": {
+      "name": "R1: nur Kreditkonditionen veränderbar",
+      "short": "R1 Kreditkonditionen",
+      "fixed_features": [
+        "checking_status",
+        "credit_history",
+        "savings_status",
+        "employment",
+        "personal_status_sex",
+        "residence_since",
+        "property",
+        "age",
+        "other_installment_plans",
+        "housing",
+        "existing_credits",
+        "job",
+        "dependents",
+        "telephone",
+        "foreign_worker"
+      ],
+      "min_p_good": 0.5
+    },
+    "R2_abstand": {
+      "name": "R2: Sicherheitsabstand p(good) ≥ 0,8",
+      "short": "R2 Abstand ≥ 0,8",
+      "fixed_features": [
+        "age",
+        "credit_history",
+        "personal_status_sex",
+        "foreign_worker"
+      ],
+      "min_p_good": 0.8
+    }
+  },
+  "loan_terms_r1": [
+    "credit_amount",
+    "duration",
+    "purpose",
+    "installment_rate",
+    "other_debtors"
+  ],
+  "secondary_metric": "Erfolg mit höchstens einem geänderten Merkmal",
+  "range_limited_features": [
+    "credit_amount",
+    "duration"
+  ],
+  "relative_limit": 0.2,
+  "posthoc_sparsity_param": 0,
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 2026,
+  "pipeline": "OneHotEncoder für Kategorien; Zahlen unverändert; RandomForest",
+  "search_method": "DiCE random; Stichprobengröße nach Zahl variabler Merkmale",
+  "budget_definition": "Gezählte Eingabezeilen der DiCE-Modellaufrufe; Prüfungen separat"
+}

@@ -1,0 +1,21 @@
+﻿Merkmal,Bedeutung,Typ
+checking_status,Status des bestehenden Girokontos (Kategorien A11-A14),kategorial
+duration,Kreditlaufzeit in Monaten,numerisch
+credit_history,Bisherige Kredithistorie (Kategorien),kategorial
+purpose,Verwendungszweck des Kredits,kategorial
+credit_amount,Kreditbetrag in den Originaleinheiten des Datensatzes,numerisch
+savings_status,Kategorie der Ersparnisse,kategorial
+employment,Kategorie der bisherigen Beschäftigungsdauer,kategorial
+installment_rate,Dokumentierte Stufe der Ratenbelastung,numerisch
+personal_status_sex,Gemeinsame Kategorie für Personenstand und Geschlecht,kategorial
+other_debtors,Weitere Schuldner oder Bürgen,kategorial
+residence_since,Dokumentierte Dauer am bisherigen Wohnort,numerisch
+property,Kategorie des Vermögens / Eigentums,kategorial
+age,Alter in Jahren,numerisch
+other_installment_plans,Andere Ratenzahlungspläne,kategorial
+housing,Wohnsituation,kategorial
+existing_credits,Anzahl bestehender Kredite bei dieser Bank,numerisch
+job,Berufskategorie,kategorial
+dependents,Anzahl unterhaltsberechtigter Personen,numerisch
+telephone,Telefonkategorie,kategorial
+foreign_worker,Im historischen Datensatz erfasste Kategorie foreign worker,kategorial

@@ -1,0 +1,13 @@
+﻿Reihe,Mass,Vergleich,Differenz_Prozentpunkte,CI95_unten,CI95_oben
+R0_ausgang,Erfolgsrate,B_fest minus A_frei,0.0,0.0,0.0
+R0_ausgang,Erfolgsrate,C_fest_bereich minus A_frei,0.0,0.0,0.0
+R0_ausgang,Erfolgsrate_1_Aenderung,B_fest minus A_frei,-4.827586206896552,-12.413793103448272,2.758620689655167
+R0_ausgang,Erfolgsrate_1_Aenderung,C_fest_bereich minus A_frei,-21.379310344827584,-31.72413793103449,-10.344827586206899
+R1_beeinflussbar,Erfolgsrate,B_fest minus A_frei,0.0,0.0,0.0
+R1_beeinflussbar,Erfolgsrate,C_fest_bereich minus A_frei,-25.517241379310345,-42.75862068965517,-10.344827586206895
+R1_beeinflussbar,Erfolgsrate_1_Aenderung,B_fest minus A_frei,-6.206896551724138,-17.24137931034484,6.206896551724128
+R1_beeinflussbar,Erfolgsrate_1_Aenderung,C_fest_bereich minus A_frei,-34.48275862068966,-45.51724137931035,-24.137931034482758
+R2_abstand,Erfolgsrate,B_fest minus A_frei,-23.448275862068964,-37.931034482758605,-11.03448275862069
+R2_abstand,Erfolgsrate,C_fest_bereich minus A_frei,-55.86206896551724,-72.41379310344827,-39.3103448275862
+R2_abstand,Erfolgsrate_1_Aenderung,B_fest minus A_frei,0.0,0.0,0.0
+R2_abstand,Erfolgsrate_1_Aenderung,C_fest_bereich minus A_frei,-1.3793103448275863,-4.137931034482759,0.0
